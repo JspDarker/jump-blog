@@ -16,5 +16,7 @@ Route::get('well', function () {
 });
 
 Route::group(['prefix' => 'dev'], function () {
-    
+   Route::get('page', function() {
+       return '123';
+   }); 
 });
