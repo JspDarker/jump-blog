@@ -16,7 +16,6 @@ Route::get('well', function () {
 });
 
 Route::group(['prefix' => 'dev'], function () {
-   Route::get('page', function() {
-       return '123';
-   }); 
+   Route::get('param', 'LearnRouteController@index')->name('param');
+   Route::get('go/{id}', 'LearnRouteController@go')->name('go.param');
 });
