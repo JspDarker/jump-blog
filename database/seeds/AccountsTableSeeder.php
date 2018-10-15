@@ -21,10 +21,13 @@ class AccountsTableSeeder extends Seeder
 
         //using faker
         $faker = Faker::create();
-        $account = \App\Account::create([
-            'fname' => $faker->firstName,
-            'lname' => $faker->lastName,
-            'email' => $faker->email
-        ]);
+        for($i = 0; $i < 10; $i++) {
+            $account = \App\Account::create([
+                'fname' => $faker->firstName,
+                'lname' => $faker->lastName,
+                'email' => $faker->email
+            ]);
+        }
+
     }
 }

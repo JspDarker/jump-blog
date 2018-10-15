@@ -10,4 +10,4 @@ php artisan make:seeder UsersTableSeeder
     composer dump-autoload
     php artisan db:seed
     php artisan db:seed --class=UsersTableSeeder
-    php artisan migrate:refresh --seed
+    php artisan migrate:refresh --seed (hook)
