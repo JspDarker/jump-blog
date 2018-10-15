@@ -19,7 +19,7 @@ class CreateDepartmentsTable extends Migration
             $table->index('account_id');
             $table->string('name');
             $table->string('icon')->nullable();
-            $table->string('url');
+            $table->string('url')->nullable();
             $table->timestamps();
         });
     }
