@@ -11,3 +11,5 @@ php artisan make:seeder UsersTableSeeder
     php artisan db:seed
     php artisan db:seed --class=UsersTableSeeder
     php artisan migrate:refresh --seed (hook)
+
+php artisan make:factory PostFactory [--model=Post] // command create factory on model

@@ -9,3 +9,12 @@ $factory->define(\App\Account::class, function (Faker $faker) {
         'email' => $faker->email
     ];
 });
+
+$factory->define(\App\Department::class, function(Faker $faker) {
+    return [
+        'account_id' => \App\Account::all()->random()->id,
+        'name' => $faker->name,
+        'icon' => $faker->randomElement(array('fa fa-rocket','fa fa-plane','fa fa-car', 'fa fa-truck', 'fa fa-subway', 'fa fa-bicycle')),
+        'url'  => $faker->userName
+    ];
+});

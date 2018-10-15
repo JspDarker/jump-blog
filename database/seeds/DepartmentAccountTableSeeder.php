@@ -12,7 +12,10 @@ class DepartmentAccountTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        // create account before
         $account = factory(\App\Account::class,100)->create();
+        // create department after
+        $deparment = factory(\App\Department::class, 10)->create();
     }
+
 }
