@@ -17,7 +17,7 @@ class CreateAccountsTable extends Migration
             $table->increments('id');
             $table->string('fname');
             $table->string('lname');
-            $table->string('email');
+            $table->string('email')->unique();
             $table->timestamps();
         });
     }

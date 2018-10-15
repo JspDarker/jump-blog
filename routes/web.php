@@ -1,5 +1,11 @@
 <?php
-
+// use Illuminate\Database\Schema\Blueprint;
+// use Illuminate\Support\Facades\Schema;
+// Route::get('db', function () {
+//     Schema::table('departments', function (Blueprint $table) {
+//         $table->index('account_id');
+//     });
+// });
 /*
 |--------------------------------------------------------------------------
 | Web Routes
