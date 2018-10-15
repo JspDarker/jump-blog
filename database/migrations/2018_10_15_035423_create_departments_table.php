@@ -15,11 +15,12 @@ class CreateDepartmentsTable extends Migration
     {
         Schema::create('departments', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('account_id');
-            $table->index('account_id');
+            $table->integer('account_id')->unsigned();
+            $table->index('account_id'); // index field
             $table->string('name');
             $table->string('icon')->nullable();
             $table->string('url')->nullable();
+            $table->foreign('account_id')->references('id')->on('accounts'); // create a relationship
             $table->timestamps();
         });
     }
