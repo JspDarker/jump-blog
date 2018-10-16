@@ -13,7 +13,13 @@ Route::get('/', function () {
 });
 
 Route::group(['prefix' => 'dev', 'middleware' => 'web'], function () {
-   Route::get('param', 'LearnRouteController@index')->name('param');
-   Route::get('go/{id}', 'LearnRouteController@go')->name('go.param');
-   Route::get('depart', 'LearnRouteController@getDeparts')->name('depart');
+    Route::get('post/create', 'Sushi\ItaDaController@create')->name('storm.create');
+    Route::post('post', 'Sushi\ItaDaController@store')->name('storm.store');
+
+
+    //DEMO == //
+//   Route::get('param', 'LearnRouteController@index')->name('param');
+//   Route::get('go/{id}', 'LearnRouteController@go')->name('go.param');
+//   Route::get('depart', 'LearnRouteController@getDeparts')->name('depart');
+   // <!--> /. ====DONE DEMO == //
 });
