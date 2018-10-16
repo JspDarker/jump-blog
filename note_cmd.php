@@ -17,3 +17,5 @@ php artisan make:factory PostFactory [--model=Post] // command create factory on
 // fix bug not auto update timestamp
     # https://github.com/laravel/framework/issues/22900
     # https://ma.ttias.be/laravel-mysql-auto-adding-update-current_timestamp-timestamp-fields/
+// get log db
+    # https://stackoverflow.com/questions/27753868/how-to-get-the-query-executed-in-laravel-5-dbgetquerylog-returning-empty-arr
