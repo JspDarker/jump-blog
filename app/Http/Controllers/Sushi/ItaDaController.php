@@ -2,9 +2,8 @@
 
 namespace App\Http\Controllers\Sushi;
 
-use App\Http\Requests\StoreSimplePost;
-#use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreSimplePost;
 
 class ItaDaController extends Controller
 {

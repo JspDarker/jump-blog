@@ -35,7 +35,7 @@ class StoreSimplePost extends FormRequest
     {
         return [
             'age.required' => 'Age is required xxx!',
-            'age.max' => 'max 100 zzz!',
+            'age.max' => 'field is max :max age!',
             'f_email.required' => 'Email is required yyy!',
         ];
     }
