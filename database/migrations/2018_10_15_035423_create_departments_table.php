@@ -16,12 +16,14 @@ class CreateDepartmentsTable extends Migration
         Schema::create('departments', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('account_id')->unsigned();
-            $table->index('account_id'); // index field
             $table->string('name');
             $table->string('icon')->nullable();
             $table->string('url')->nullable();
+            $table->timestamp('updated_at');
+            $table->timestamp('created_at')->nullable();
+
+            $table->index('account_id'); // index field # https://ma.ttias.be/laravel-mysql-auto-adding-update-current_timestamp-timestamp-fields/
             $table->foreign('account_id')->references('id')->on('accounts'); // create a relationship
-            $table->timestamps();
         });
     }
 

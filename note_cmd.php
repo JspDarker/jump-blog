@@ -13,3 +13,7 @@ php artisan make:seeder UsersTableSeeder
     php artisan migrate:refresh --seed (hook)
 
 php artisan make:factory PostFactory [--model=Post] // command create factory on model
+
+// fix bug not auto update timestamp
+    # https://github.com/laravel/framework/issues/22900
+    # https://ma.ttias.be/laravel-mysql-auto-adding-update-current_timestamp-timestamp-fields/

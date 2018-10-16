@@ -18,7 +18,9 @@ class CreateAccountsTable extends Migration
             $table->string('fname');
             $table->string('lname');
             $table->string('email')->unique();
-            $table->timestamps();
+            //$table->timestamps(); // Change it
+            $table->timestamp('updated_at');
+            $table->timestamp('created_at')->nullable();
         });
     }
 
