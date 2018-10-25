@@ -10,13 +10,12 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::group(['prefix' => '/','middleware' => 'web'], function () {
+    // you can also create route::group && middleware for route
+
+});
+
 
 Route::get('well', function () {
     return view('welcome');
-});
-
-Route::group(['prefix' => 'dev'], function () {
-   Route::get('page', function() {
-       return '123';
-   }); 
 });
