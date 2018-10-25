@@ -5,8 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>@Blog</title>
-
+        <title>script || App</title>
+    <link rel="shortcut icon" href="{{ asset('images/logo/rainbow_logo.png') }}">
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
 
@@ -66,7 +66,7 @@
     </head>
     <body>
         <section>
-            <h1>Hello World 123 !</h1>
+            <h1></h1>
         </section>
     </body>
 </html>

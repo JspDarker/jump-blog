@@ -13,6 +13,7 @@ Route::get('/', function () {
 });
 
 Route::group(['prefix' => 'dev', 'middleware' => 'web'], function () {
+    Route::get('php', 'Sushi\ItaDaController@go')->name('storm.go');
     Route::get('post/create', 'Sushi\ItaDaController@create')->name('storm.create');
     Route::post('post', 'Sushi\ItaDaController@store')->name('storm.store');
 

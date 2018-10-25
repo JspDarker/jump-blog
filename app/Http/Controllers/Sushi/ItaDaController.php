@@ -17,4 +17,9 @@ class ItaDaController extends Controller
     {
         $validated = $request->validated();
     }
+
+    public function go()
+    {
+        return view('storm.go');
+    }
 }
