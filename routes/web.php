@@ -17,5 +17,6 @@ Route::group(['prefix' => '/','middleware' => 'web'], function () {
 
 
 Route::get('well', function () {
-    return view('welcome');
+    //return view('welcome');
+    return config('services.self.mouse');
 });
